@@ -13,12 +13,16 @@ export default class WeatherBug extends Component {
     }
   }
   
-  
+  //Method for fetching State from State picker
    onSelect = (value) =>{
     this.setState({state : value});
   }
  
-    
+   // filters any non alphabet or space characters from city input
+//  Then combines city and state to make api call
+// takes returned JSON and loads rows into the datasource property for the component
+// Resets the loading tag to show the loading spinner again, sets the city to the 
+// filtered string to get rid of character babble grossness.   
   getNewWeather(){
   var cityCorrect = this.state.city.toString();
   cityCorrect= cityCorrect.replace(/[^" *"a-z]/gi, '');
@@ -32,7 +36,7 @@ export default class WeatherBug extends Component {
           isLoading: false,
           dataSource: ds.cloneWithRows(responseJson.forecast.txt_forecast.forecastday),
         }, function() {
-          // do something with new state
+          // do something with new state, for future logic
         });
       })
       .catch((error) => {
@@ -40,6 +44,11 @@ export default class WeatherBug extends Component {
       });
 	  }
  
+ // a similar function to getNewWeather, ideally the overlap between the two should be combined
+ // to reduce redundancy, however time was of the essence. Next time! The only thing to note
+ // about this method is that it fires the first time the component loads on page, allowing 
+ // us that nice little spinner until we have our first response and the app is ready.
+
   componentDidMount() {
 	var urlTarget = 'http://api.wunderground.com/api/24f0b7e4ed53f605/forecast/q/' + this.state.state +'/' +this.state.city+'.json';
     return fetch(urlTarget)
@@ -50,7 +59,7 @@ export default class WeatherBug extends Component {
           isLoading: false,
           dataSource: ds.cloneWithRows(responseJson.forecast.txt_forecast.forecastday),
         }, function() {
-          // do something with new state
+          // do something with new state, for future logic
         });
       })
       .catch((error) => {
@@ -59,10 +68,13 @@ export default class WeatherBug extends Component {
   }
 
  
-
+//the markup here speaks for itself, the data is being displayed through 
+// a standard list view with specialized row components.
+// See Row.js and StateSelector.js for the two subcomponents listed
+// when pressed, the button calls getNewWeather
   render() {
        
-
+	// controls spinner during loading 
     if (this.state.isLoading) {
       return (
 		 <View style={{flex: 1, paddingTop: 20}}>

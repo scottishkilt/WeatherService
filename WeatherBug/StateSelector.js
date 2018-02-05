@@ -1,3 +1,7 @@
+// This component takes a state value and a callback function as properties,
+// it uses them to maintain the proper state of the picker on reload, and 
+// pass the relevant State to the higher level component.
+
 import React, {Component} from 'react';
    
 import {

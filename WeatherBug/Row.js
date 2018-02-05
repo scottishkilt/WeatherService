@@ -1,3 +1,7 @@
+// This component exists only to combine images and text
+// on the same line, which the "renderRow" function in 
+// React doesn't play nice with.
+
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
