@@ -42,4 +42,4 @@ Enjoy the app!
 Regards,
 Paul
 
-P.s. If you'd like more in depth commenting and documentation please let me know, I'm in the middle of a sprint right now so things are a bit hectic and I was more focused on function.
+P.s. If you'd like more in depth commenting and documentation please let me know. I'm in the middle of a sprint right now so things are a bit hectic and I was more focused on function.
