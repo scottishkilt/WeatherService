@@ -6,7 +6,7 @@ Hi!
 
 If you are reading this, thanks for taking the time to look at my app!
 
-I'm really keen on being a tech evangelist, and keen on your internship specifically.
+I'm really keen on being a tech evangelist, and keen on Docusign specifically.
 
 Despite that I did the stupid thing and decided that this would be the perfect time 
 to learn React Native! So I did. Here it is! Boom. You asked for one app, you got two.
@@ -15,10 +15,9 @@ TWO APPS.
 
 Isn't that great, now you have TWICE the quality weather forecasting fun. 
 
-Now, the funny thing is that I don't have access to my Mac right now so there isn't an IOS app,
-there will be on Tuesday 5/25/18. So I suppose as of writing this you only get one quality app.
-But just to set the record straight, we can have a second one (ios) with the same code, because 
-React Native is boss.
+Now, the funny thing is that I don't have access to my Mac right now so there isn't currently an IOS app. 
+So I suppose as of writing this you only get one quality app, however I'd be happy to produce the IOS version
+upon request, because React Native is awesome.
 
 I didn't know if you wanted me to release it to the app store, etc, so the android APK is just included
 in the top level of this repo. I was able to run the app and test it via drag and dropping the APK onto
