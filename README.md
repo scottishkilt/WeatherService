@@ -15,9 +15,7 @@ TWO APPS.
 
 Isn't that great, now you have TWICE the quality weather forecasting fun. 
 
-Now, the funny thing is that I don't have access to my Mac right now so there isn't currently an IOS app. 
-So I suppose as of writing this you only get one quality app, however I'd be happy to produce the IOS version
-upon request, because React Native is awesome.
+Well, at least you CAN have two apps. I don’t have a paid apple developer account. If you want to either give me $99 or access to yours, I’d be happy to provide the iPhone app!
 
 I didn't know if you wanted me to release it to the app store, etc, so the android APK is just included
 in the top level of this repo. I was able to run the app and test it via drag and dropping the APK onto

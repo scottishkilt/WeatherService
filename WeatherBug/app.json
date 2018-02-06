@@ -1,5 +1,15 @@
 {
-  "expo": {
-    "sdkVersion": "25.0.0"
-  }
+	"expo": {
+		"name": "WeatherBug",
+		"icon": "./images.png",
+		"version": "1.0.0",
+		"slug": "weatherbug-slug",
+		"sdkVersion": "25.0.0",
+		"ios": {
+			"bundleIdentifier": "com.paulogan.weatherbug"
+		},
+		"android": {
+			"package": "com.paulogan.weatherbug"
+		}
+	}
 }
